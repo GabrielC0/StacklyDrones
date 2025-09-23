@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { PortfolioPreviewGrid } from "@/components/portfolio-preview";
 import Image from "next/image";
+import heroImg from "@/public/stunning-aerial-drone-shot-of-wedding-venue-at-sun.jpg";
 import Link from "next/link";
 import {
   Camera,
@@ -27,12 +29,13 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full animate-ken-burns">
             <Image
-              src="/stunning-aerial-drone-shot-of-wedding-venue-at-sun.jpg"
+              src={heroImg}
               alt="Vue aérienne de mariage au coucher du soleil"
               fill
               priority
               sizes="100vw"
               className="object-cover"
+              placeholder="blur"
             />
             <div className="absolute inset-0 bg-black/30" />
           </div>
@@ -194,30 +197,7 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
-              <ScrollReveal key={item} direction="up" delay={index * 100}>
-                <div className="group relative overflow-hidden rounded-lg aspect-video hover:shadow-xl transition-all duration-500">
-                  <div
-                    className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                    style={{
-                      backgroundImage: `url('/beautiful-aerial-wedding-ceremony-drone-shot-with-.jpg')`,
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
-                    <Button
-                      variant="secondary"
-                      size="sm"
-                      className="transform scale-75 group-hover:scale-100 transition-transform duration-300 text-xs sm:text-sm"
-                    >
-                      <Play className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
-                      Voir la vidéo
-                    </Button>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
+          <PortfolioPreviewGrid />
 
           <ScrollReveal direction="up" delay={600}>
             <div className="text-center mt-12 sm:mt-16">
