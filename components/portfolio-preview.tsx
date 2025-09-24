@@ -60,7 +60,7 @@ export function PortfolioPreviewGrid() {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         {images.map((src, index) => (
-          <div key={src} className="group relative overflow-hidden rounded-lg aspect-video hover:shadow-xl transition-all duration-500">
+          <div key={src.src} className="group relative overflow-hidden rounded-lg aspect-video hover:shadow-xl transition-all duration-500">
             <div className="relative w-full h-full">
               <Image
                 src={src}
