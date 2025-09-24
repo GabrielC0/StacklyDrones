@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
+import Image from "next/image"
 import {
   Camera,
   Award,
@@ -42,12 +43,14 @@ export default function AboutPage() {
                 </Button>
               </div>
             </div>
-            <div className="relative">
-              <div
-                className="w-full h-96 bg-cover bg-center rounded-lg shadow-lg"
-                style={{
-                  backgroundImage: `url('/placeholder.svg?key=photographer-portrait')`,
-                }}
+            <div className="relative h-96">
+              <Image
+                src="/about/PH1.JPG"
+                alt="Portrait du vidéaste"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover rounded-lg shadow-lg"
+                priority
               />
               <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">500+</div>

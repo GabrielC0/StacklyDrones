@@ -263,7 +263,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-medium text-card-foreground">Email</p>
-                    <p className="text-muted-foreground">gabriel@icloud.com</p>
+                    <p className="text-muted-foreground">gabriel.changrenier@icloud.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
 import fs from "node:fs"
 import path from "node:path"
@@ -50,14 +51,14 @@ export default function PortfolioPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-card min-h-[70vh] flex items-center justify-center py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-card-foreground mb-6">Quelques chiffres</h2>
             <p className="text-xl text-muted-foreground">Le résultat de plusieurs années de passion</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">500+</div>
               <div className="text-muted-foreground">Événements filmés</div>
@@ -76,7 +77,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-20 bg-background">
+      {/* <section className="py-20 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-card rounded-lg p-8 border border-border">
             <div className="text-6xl text-primary mb-4">"</div>
@@ -85,12 +86,15 @@ export default function PortfolioPage() {
               jour J à chaque visionnage. Merci pour ces souvenirs inoubliables.
             </p>
             <div className="flex items-center justify-center space-x-4">
-              <div
-                className="w-12 h-12 bg-cover bg-center rounded-full"
-                style={{
-                  backgroundImage: `url('/placeholder.svg?key=client-testimonial')`,
-                }}
-              />
+              <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                <Image
+                  src="/placeholder.svg?key=client-testimonial"
+                  alt="Photo du client"
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </div>
               <div>
                 <div className="font-semibold text-card-foreground">Marie & Thomas</div>
                 <div className="text-sm text-muted-foreground">Mariage Château de Versailles</div>
@@ -98,7 +102,7 @@ export default function PortfolioPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-primary">

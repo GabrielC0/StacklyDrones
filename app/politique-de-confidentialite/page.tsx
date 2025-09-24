@@ -7,7 +7,7 @@ export default function PolitiqueConfidentialitePage() {
           <div className="prose prose-invert:prose lg:prose-lg text-muted-foreground">
             <p>Nous collectons les informations nécessaires à la gestion de vos demandes (nom, email, téléphone).</p>
             <p>Vos données ne sont ni vendues ni partagées à des tiers sans votre consentement.</p>
-            <p>Pour exercer vos droits (accès, rectification, suppression), contactez: gabriel@icloud.com.</p>
+            <p>Pour exercer vos droits (accès, rectification, suppression), contactez: gabriel.changrenier@icloud.com.</p>
           </div>
         </div>
       </section>

@@ -89,9 +89,9 @@ export default function ServicesPage() {
               },
               {
                 icon: Clock,
-                title: "Livraison rapide",
+                title: "Livraison",
                 description: "Vos souvenirs livrés dans les meilleurs délais après votre mariage",
-                features: ["Aperçu 24h", "Livraison 3-5 jours", "Galerie en ligne", "Support USB personnalisé"],
+                features: ["Livraison en 14 jour(s)", "Galerie en ligne", "Support USB personnalisé"],
               },
               {
                 icon: MapPin,
@@ -286,12 +286,12 @@ export default function ServicesPage() {
               {
                 question: "Quand recevrons-nous nos vidéos et photos ?",
                 answer:
-                  "Vous recevrez un aperçu dans les 24h suivant votre mariage, puis l'ensemble des livrables finalisés sous 3 à 5 jours ouvrés.",
+                  "L'ensemble des livrables finalisés est livré sous 14 jour(s) ouvrés après votre mariage.",
               },
               {
                 question: "Que se passe-t-il en cas de mauvais temps ?",
                 answer:
-                  "La sécurité est notre priorité. En cas de conditions météo défavorables, nous adaptons notre approche ou reportons la prestation sans frais supplémentaires.",
+                  "La sécurité est notre priorité. En cas de conditions météo défavorables, la prestation peut être annulée. Dans ce cas, seuls les frais de déplacement restent à la charge du client.",
               },
               {
                 question: "Intervenez-vous partout en France ?",
@@ -301,7 +301,7 @@ export default function ServicesPage() {
               {
                 question: "Proposez-vous des révisions ?",
                 answer:
-                  "Oui, 2 révisions mineures sont incluses dans chaque prestation. Nous travaillons avec vous jusqu'à votre entière satisfaction.",
+                  "Oui, les révisions sont illimitées. Nous ajustons le montage jusqu'à votre entière satisfaction.",
               },
             ].map((faq, index) => (
               <ScrollReveal key={index} direction="up" delay={index * 100}>

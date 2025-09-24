@@ -88,7 +88,7 @@ export default function HomePage() {
               {[
                 { icon: Award, text: "Certifié drone" },
                 { icon: Camera, text: "Qualité 4K" },
-                { icon: Clock, text: "Livraison 48h" },
+                { icon: Clock, text: "Livraison en 14 jour(s)" },
                 { icon: MapPin, text: "France entière" },
               ].map((item, index) => (
                 <div

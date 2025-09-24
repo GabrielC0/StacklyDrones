@@ -14,7 +14,7 @@ export default function PolitiqueCookiesPage() {
               impacter le fonctionnement du site.
             </p>
             <p>
-              Pour toute question concernant les cookies, contactez-nous à l’adresse: gabriel@icloud.com.
+              Pour toute question concernant les cookies, contactez-nous à l’adresse: gabriel.changrenier@icloud.com.
             </p>
           </div>
         </div>
